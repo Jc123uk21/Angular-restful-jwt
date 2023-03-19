@@ -1,0 +1,26 @@
+.footer{
+    position: fixed;
+    height: 15%;
+    width: 100%;
+    background-color:darkolivegreen;
+    overflow: visible;
+}
+
+.footer .socials{
+    justify-content: space-between;
+    justify-items: center;
+    padding: 10px;
+}
+
+.socials .facebook-icon img{
+    height: 50px;
+    width: 50px;
+}
+.socials .instagram-icon img{
+    height: 50px;
+    width: 50px;
+}
+.socials .twitter-icon img{
+    height: 50px;
+    width: 50px;
+}

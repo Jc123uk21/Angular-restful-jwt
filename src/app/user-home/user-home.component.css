@@ -1,0 +1,9 @@
+.grid{
+   grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.grid .card{
+    width: 230px;
+    height: 300px;
+}

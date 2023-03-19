@@ -1,0 +1,25 @@
+<div class="login-form"> 
+    <div class="grid">
+        <div class="coffee-icon">
+            <img src="./assets/icons/coffee-cup.png" alt="coffee-cup">
+        </div>
+        <div class="card text-center">
+            <form [formGroup] ="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="username">Username</label><br>
+                    <input class = "form-control" type="email" id="username" formControlName="username" minlength="8" 
+                        maxlength="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label><br>
+                    <input class = "form-control" type="password" id="password" formControlName="password" minlength="8"
+                         maxlength="20" required>
+                </div><br>
+                <button class="btn" type="submit">login</button>
+            </form>    
+        </div>   
+    </div>   
+</div>
+
+
+

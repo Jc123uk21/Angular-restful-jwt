@@ -1,0 +1,21 @@
+.cart-info{
+    height: 520px;  
+    position: relative;
+}
+
+.cart-info .card{
+    height: 400px;
+    width: 500px;
+    padding: 15px 15px;
+    position: relative;
+    justify-self: center;
+}
+
+.cart-info h4{
+    color: #fff;
+}
+
+.cart-info .card .h6{
+    font-weight: 300;
+}
+

@@ -1,0 +1,27 @@
+.coffee-list{
+    min-height: 550px;
+    background-color: darkkhaki;
+}
+.coffee-list .flex{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.coffee-cards{
+    justify-content: space-between;
+}
+.coffee-cards .card{
+    height: 230px;
+    width: 210px;
+}
+.card a{
+    color: black;
+}
+.card img{
+    height: 60px;
+    width: 80px;
+}
+
+.container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}

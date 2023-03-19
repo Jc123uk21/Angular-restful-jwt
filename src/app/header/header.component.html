@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg background-colour-primary bg-gradient">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" routerLink= "">CoffeesToGo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" routerLink="coffees">Coffees</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="services">Services</a></li>
+              <li><a class="dropdown-item" routerLink="stores">Our Stores</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink="/contact">Contact us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul *ngIf="!isLoggedIn" class="navbar-nav end">
+            <li><a class="nav-link active text-light" routerLink="register">Register</a></li>
+            <li><a class="nav-link active text-light" routerLink="login-page">Login</a></li>
+        </ul>
+        <ul *ngIf="isLoggedIn" class="navbar-nav end">
+          <li><a class="nav-link active text-light" routerLink="my-account">My Account</a></li>
+          <li><button class="nav-link active text-light" (click)="logout()" >Logout</button></li>
+      </ul>
+      </div>
+    </div>
+  </nav>

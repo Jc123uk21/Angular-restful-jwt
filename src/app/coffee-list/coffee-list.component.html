@@ -1,0 +1,19 @@
+
+<div class="coffee-list flex text-center"> 
+    <div class = "coffee-cards" *ngFor="let coffee of coffees">  
+        <div class="card">
+            <h4>{{coffee.name}}</h4>
+            <img src="./assets/icons/coffee-cup.png" alt="coffee cup">
+            <p>{{coffee.kcals}} kcals</p>
+            <p>£{{coffee.price}}</p> 
+            <div class ="grid">
+                <div>
+                    <a href="">more info</a>
+                </div>
+                <div *ngIf ="isLoggedIn">
+                    <a>add to cart</a>
+                </div>              
+            </div>           
+        </div>
+    </div>
+</div>

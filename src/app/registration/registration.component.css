@@ -1,0 +1,24 @@
+.registration{
+    background-color: darkkhaki;
+    height: 550px;
+}
+
+.registration .container form.reg-form{
+    background-color: #fff;
+    border: 3px;
+    border-style: none;
+    border-radius: 5%;
+    width: 400px;
+    padding: 30px 30px;
+    justify-self: center;
+}
+
+.container{
+    padding: 20px;
+    justify-content: center;
+}
+
+.shop-icon img{
+    height: 400px;
+    width: 400px;
+}
